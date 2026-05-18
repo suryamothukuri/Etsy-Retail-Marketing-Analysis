@@ -1,0 +1,42 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:         LogReviewCount   R-squared:                       0.123
+Model:                            OLS   Adj. R-squared:                  0.121
+Method:                 Least Squares   F-statistic:                     80.68
+Date:                Mon, 20 Apr 2026   Prob (F-statistic):          4.82e-278
+Time:                        22:56:41   Log-Likelihood:                -20170.
+No. Observations:               10406   AIC:                         4.038e+04
+Df Residuals:                   10387   BIC:                         4.052e+04
+Df Model:                          18                                         
+Covariance Type:            nonrobust                                         
+=================================================================================================
+                                    coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------------------
+const                             6.6396      0.022    302.610      0.000       6.597       6.683
+SocialImpact_c                   -0.0860      0.286     -0.301      0.764      -0.647       0.475
+SentimentScore_c                  1.0782      0.108      9.965      0.000       0.866       1.290
+Handmade_c                       -0.2446      0.035     -6.896      0.000      -0.314      -0.175
+trust_factor_c                    0.6269      0.075      8.377      0.000       0.480       0.774
+TrustFactor_x_Sentiment_c         0.6865      0.774      0.887      0.375      -0.830       2.203
+LogPrice_winsorized_std          -0.2532      0.017    -14.734      0.000      -0.287      -0.220
+average_rating_std                0.0663      0.017      3.994      0.000       0.034       0.099
+cat_Accessories                  -0.0840      0.086     -0.975      0.329      -0.253       0.085
+cat_Art & Collectibles           -1.2088      0.072    -16.873      0.000      -1.349      -1.068
+cat_Bath & Beauty                -0.3151      0.304     -1.038      0.299      -0.910       0.280
+cat_Clothing                     -0.0009      0.224     -0.004      0.997      -0.440       0.438
+cat_Electronics & Accessories     2.2420      2.230      1.005      0.315      -2.130       6.614
+cat_Home & Living                 0.2560      0.687      0.372      0.710      -1.091       1.603
+cat_Jewellery                     0.1075      0.208      0.516      0.606      -0.301       0.516
+cat_Paper & Party Supplies        0.1491      0.468      0.319      0.750      -0.768       1.067
+cat_Pet Supplies                 -0.4580      0.104     -4.414      0.000      -0.661      -0.255
+cat_Shoes                        -1.1257      0.042    -26.735      0.000      -1.208      -1.043
+cat_Toys & Games                 -0.5376      0.102     -5.288      0.000      -0.737      -0.338
+==============================================================================
+Omnibus:                      570.534   Durbin-Watson:                   1.977
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              680.072
+Skew:                          -0.579   Prob(JB):                    2.11e-148
+Kurtosis:                       3.478   Cond. No.                         143.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
